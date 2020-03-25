@@ -6,7 +6,9 @@ class Person
   end
 
   def get_married(person)
+  #beyonce.partner = jay_z
     self.partner = person
+  #jay_z.partner = beyonce
     person.partner = self
     if person.class != Person
       raise PartnerError
@@ -20,10 +22,11 @@ end
   
 
 beyonce = Person.new("Beyonce")
+jay_z = Person.new("Jay-Z")
 
+beyonce.get_married(jay_z)
 
-
-beyonce.get_married("Jay-Z")
+#beyonce.get_married("Jay-Z")
 puts beyonce.name
 
 
