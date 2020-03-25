@@ -11,7 +11,9 @@ class Person
   #jay_z.partner = beyonce
   #  person.partner = self
     if person.class != Person
-      raise PartnerError
+      begin raise PartnerError
+      rescue 
+      PartnerError => error 
     else
       person.partner = self
   end
