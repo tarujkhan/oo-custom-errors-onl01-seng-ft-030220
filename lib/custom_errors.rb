@@ -9,7 +9,7 @@ class Person
   #beyonce.partner = jay_z
     self.partner = person
   #jay_z.partner = beyonce
-    person.partner = self
+  #  person.partner = self
     if person.class != Person
       raise PartnerError
     else
