@@ -30,4 +30,4 @@ puts beyonce.name
 
 
 
-
+end 
